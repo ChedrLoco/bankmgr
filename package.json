@@ -1,0 +1,25 @@
+{
+  "name": "bankmgr",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allstate-compozed/bankmgr.git"
+  },
+  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allstate-compozed/bankmgr/issues"
+  },
+  "homepage": "https://github.com/allstate-compozed/bankmgr#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "uuid": "^2.0.2"
+  }
+}

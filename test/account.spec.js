@@ -3,7 +3,7 @@ const Account = require('../lib/account');
 
 describe('Account', () => {
   describe('constructor', () => {
-    it('constructs a new Account object', () => {
+    it('should construct a new Account object', () => {
       const a1 = new Account('Sara');
       expect(a1).to.be.instanceof(Account);
       expect(a1.number).to.be.length(36);
@@ -15,7 +15,7 @@ describe('Account', () => {
   });
 
   describe('#deposit', () => {
-    it('deposits money into account', () => {
+    it('should deposits money into account', () => {
       const a1 = new Account('Sara');
       const bal = a1.deposit(50);
       expect(bal).to.equal(50);
@@ -25,7 +25,7 @@ describe('Account', () => {
   });
 
   describe('#withdraw', () => {
-    it('successfully withdraws from account', () => {
+    it('should successfully withdraws from account', () => {
       const a1 = new Account('Sara');
       a1.deposit(50);
       const bal = a1.withdraw(25);
@@ -33,7 +33,7 @@ describe('Account', () => {
       expect(a1.balance).to.equal(25);
       expect(a1.withdraws).to.be.length(1);
     });
-    it('does not successfully withdraws from account', () => {
+    it('should not successfully withdraws from account', () => {
       const a1 = new Account('Sara');
       a1.deposit(50);
       const bal = a1.withdraw(100);
